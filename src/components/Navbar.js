@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 class Navbar extends Component {
   constructor() {
@@ -18,7 +18,7 @@ class Navbar extends Component {
     return (
       <nav className="navbar">
         <div className="navbar-brand">
-          <a className="navbar-item" href="/">Budgeteer</a>
+          <a href="/" className="navbar-item">Budgeteer</a>
           <div className={`navbar-burger ${ this.state.burgerIsActive ? 'is-active' : '' }`} onClick={this.toggleBurger}>
             <span></span>
             <span></span>
@@ -26,10 +26,8 @@ class Navbar extends Component {
           </div>
         </div>
         <div className={`navbar-menu ${ this.state.burgerIsActive ? 'is-active' : '' }`}>
-          <div className="navbar-start">
-            <a className="navbar-item" href="/">Accounts</a>
-            <a className="navbar-item" href="/">Budget</a>
-          </div>
+          <a href="/accounts" className="navbar-item">Accounts</a>
+          <a href="/budget" className="navbar-item">Budget</a>
         </div>
       </nav>
     )
