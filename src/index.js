@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import registerServiceWorker from './registerServiceWorker'
 import 'bulma/css/bulma.css'
+import './firebase-config'
 
 import Navbar from './components/Navbar'
 import App from './components/App'
@@ -14,7 +15,7 @@ const Root = () => {
   return (
     <div>
       <Navbar />
-      <BrowserRouter className="container">
+      <BrowserRouter>
         <Switch>
           <Route exact path="/" component={App} />
           <Route path="/accounts" component={Accounts} />
