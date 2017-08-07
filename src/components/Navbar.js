@@ -18,7 +18,7 @@ class Navbar extends Component {
     return (
       <nav className="navbar">
         <div className="navbar-brand">
-          <a href="/" className="navbar-item">Budgeteer</a>
+          <a href="/" className="navbar-item">BUDGETEER</a>
           <div className={`navbar-burger ${ this.state.burgerIsActive ? 'is-active' : '' }`} onClick={this.toggleBurger}>
             <span></span>
             <span></span>
